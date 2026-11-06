@@ -52,35 +52,61 @@ function App() {
   const certifications = [
     {
       title: "ADSA Graph Certificate",
+      issuer: "Course Completion",
+      category: "Technical Course",
       file: "/certificates/adsa-graph.pdf",
     },
     {
       title: "C Programming Certificate",
+      issuer: "Course Completion",
+      category: "Programming",
       file: "/certificates/c-programming.pdf",
     },
     {
       title: "CNND Course Certificate",
+      issuer: "Course Completion",
+      category: "Technical Course",
       file: "/certificates/cnnd-course.pdf",
     },
     {
       title: "Data Structure Certificate",
+      issuer: "Course Completion",
+      category: "Computer Science",
       file: "/certificates/data-structure.pdf",
     },
     {
-      title: "Financial Literacy Certificate",
-      file: "/certificates/financial-literacy.pdf",
+      title: "Getting Started with Machine Learning Algorithms",
+      issuer: "Certificate of Completion",
+      category: "AI / ML",
+      date: "19 September 2026",
+      detail: "Certificate code: 10756413",
+      file: "/certificates/aiml-certificate.pdf",
     },
     {
       title: "Freedom with AI Certificate",
+      issuer: "Course Completion",
+      category: "AI",
       file: "/certificates/freedom-with-ai.pdf",
     },
     {
       title: "Java Beginner Certificate",
+      issuer: "Course Completion",
+      category: "Programming",
       file: "/certificates/java-beginner.pdf",
     },
     {
       title: "Python Course Certificate",
+      issuer: "Course Completion",
+      category: "Programming",
       file: "/certificates/python-course.pdf",
+    },
+    {
+      title: "Cybersecurity",
+      issuer: "Tech Mahindra Foundation · Skill India Digital Hub",
+      category: "Cybersecurity",
+      date: "04 October 2026",
+      detail: "10-hour online skill course",
+      file: "/certificates/cybersecurity-certificate.pdf",
     },
   ];
 
@@ -357,13 +383,23 @@ function App() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.45, delay: index * 0.06 }}
             >
-              <div className="certificate-icon" aria-hidden="true">
-                ✦
+              <div className="certificate-card-top">
+                <div className="certificate-icon" aria-hidden="true">
+                  <span>✦</span>
+                </div>
+                <span className="certificate-category">{certificate.category}</span>
               </div>
 
-              <h3>{certificate.title}</h3>
-
-              <span>Course Completion</span>
+              <div className="certificate-content">
+                <h3>{certificate.title}</h3>
+                <p className="certificate-issuer">{certificate.issuer}</p>
+                {certificate.date && (
+                  <p className="certificate-date">{certificate.date}</p>
+                )}
+                {certificate.detail && (
+                  <p className="certificate-detail">{certificate.detail}</p>
+                )}
+              </div>
 
               <a
                 href={certificate.file}
@@ -372,7 +408,7 @@ function App() {
                 className="certificate-btn"
                 aria-label={`View ${certificate.title}`}
               >
-                View Certificate ↗
+                View Certificate <span aria-hidden="true">↗</span>
               </a>
             </motion.div>
           ))}
