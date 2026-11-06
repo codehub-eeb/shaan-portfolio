@@ -12,21 +12,14 @@ function App() {
     {
       title: "AuraMart",
       description:
-        "A full-stack e-commerce website with a modern shopping experience, React frontend, Node.js backend and MongoDB database.",
+        "A full-stack e-commerce website with a modern shopping experience. Some of the important features are admin dashboard, JWT authentication, COD payment system, and order tracking.",
       image: "/auramart-logo.png",
       tech: ["React", "Node.js", "Express.js", "MongoDB"],
       live: "https://auramart-nine.vercel.app/",
       github: "https://github.com/codehub-eeb/AURAMART",
       backend: "https://github.com/codehub-eeb/auramart-backend",
     },
-    {
-      title: "Navigators",
-      description:
-        "A student course guidance project concept that presents further learning options based on students' academic backgrounds.",
-      image: "/navigators-logo.png",
-      tech: ["React", "Node.js", "Express.js", "Firebase"],
-      github: "https://github.com/codehub-eeb/navigators-project",
-    },
+
   ];
 
   const skills = [
@@ -241,10 +234,10 @@ function App() {
           My <span>Skills</span>
         </h2>
 
-        <div className="skills-grid">
+        <div className="skills-grid skills-panel">
           {skills.map((skill, index) => (
             <motion.div
-              className="skill-card"
+              className="skill-chip"
               key={skill}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
