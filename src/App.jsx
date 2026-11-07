@@ -52,26 +52,34 @@ function App() {
   const certifications = [
     {
       title: "ADSA Graph Certificate",
-      issuer: "Course Completion",
+      issuer: "Infosys Springboard",
       category: "Technical Course",
+      day: "September 2025",
+      detail: "Certificate code: https://verify.onwingspan.com/",
       file: "/certificates/adsa-graph.pdf",
     },
     {
       title: "C Programming Certificate",
-      issuer: "Course Completion",
+      issuer: "Great Learning Academy",
       category: "Programming",
+      day: " November 2024",
+      detail: "Certificate code: https://www.mygreatlearning.com/certificate/BQIKVBJG",
       file: "/certificates/c-programming.pdf",
     },
     {
       title: "CNND Course Certificate",
-      issuer: "Course Completion",
+      issuer: "Cisco Networking Academy",
       category: "Technical Course",
+      day: " March 2026",
+      detail: "Cisco Networking Academy",
       file: "/certificates/cnnd-course.pdf",
     },
     {
       title: "Data Structure Certificate",
-      issuer: "Course Completion",
+      issuer: "Simplilearn| SkillUP",
       category: "Computer Science",
+      day: " September 2025",
+      detail: "Certificate code: 8916773",
       file: "/certificates/data-structure.pdf",
     },
     {
