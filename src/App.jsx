@@ -12,7 +12,7 @@ function App() {
     {
       title: "AuraMart",
       description:
-        "A full-stack e-commerce website with a modern shopping experience. Some of the important features are admin dashboard, JWT authentication, COD payment system, and order tracking.",
+        "A full-stack e-commerce website with a modern shopping experience. Some of the important features are Admin Dashboard, JWT authentication, COD payment system, and Order tracking.",
       image: "/auramart-logo.png",
       tech: ["React", "Node.js", "Express.js", "MongoDB"],
       live: "https://auramart-nine.vercel.app/",
@@ -193,8 +193,8 @@ function App() {
           <h2>Full Stack Web Developer</h2>
 
           <p className="hero-description">
-            Third-year Information Technology engineering student passionate
-            about web development, technology and building modern digital
+            Third-year Information Technology Engineering student passionate
+            about Web Development, technology and building modern digital
             experiences.
           </p>
 
@@ -253,8 +253,8 @@ function App() {
 
         <div className="about-card">
           <p>
-            I'm Shaan G. Teli, a third-year Information Technology engineering
-            student and full-stack web development enthusiast. I enjoy
+            I'm Shaan G. Teli, a third-year Information Technology Engineering
+            student and Full-stack Web Development enthusiast. I enjoy
             exploring web technologies and creating projects that solve
             practical problems.
           </p>
