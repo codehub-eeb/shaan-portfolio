@@ -20,6 +20,16 @@ function App() {
       backend: "https://github.com/codehub-eeb/auramart-backend",
     },
 
+    {
+      title: "Intellecta",
+      description:
+        "An AI-powered study assistant designed to help students with their learning and study-related tasks.",
+      image: "/intellecta-logo.png",
+      tech: ["Python", "Streamlit", "AI"],
+      live: "https://intellecta-ai-study-assistant.streamlit.app/",
+      github: "https://github.com/codehub-eeb/INTELLECTA.git",
+},
+
   ];
 
   const skills = [
