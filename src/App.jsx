@@ -44,6 +44,7 @@ function App() {
     "C",
     "C++",
     "Java",
+    "Python",
     "Git & GitHub",
     "Cybersecurity Basics",
   ];
